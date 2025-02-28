@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 
 @Entity
-@Table(name = "employee")
+@Table(name = "employee", uniqueConstraints = @UniqueConstraint(columnNames = {"emp_name","emp_department"}))
 public class Employee {
 
     @Id
@@ -14,7 +14,7 @@ public class Employee {
     @Column(name = "emp_name", nullable = false)
     private String name;
 
-    @Column(name = "emp_department")
+    @Column(name = "emp_department", nullable = false)
     private String department;
 
     public Employee() {

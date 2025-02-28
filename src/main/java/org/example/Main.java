@@ -1,8 +1,6 @@
 package org.example;
 
 import org.example.dao.EmployeeDAO;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
 
 import java.util.List;
 
@@ -11,7 +9,9 @@ public class Main {
         EmployeeDAO employeeDAO=new EmployeeDAO();
 
 // ------------------save Employee entry----------(Start)
-//        employeeDAO.saveEmployee("Sahithi","Products");
+//        employeeDAO.saveEmployee("Indu","Dev");
+//        employeeDAO.saveEmployee("Sahi","Admin");
+//        employeeDAO.saveEmployee("Bala","Products");
 // ------------------save Employee entry-----------(end)
 
 
@@ -45,12 +45,12 @@ public class Main {
 
 
 // ------------------Update employee name by ID ---------(start)
-//        employeeDAO.updateEmployee(2L,"Mouni","DB");
+        employeeDAO.updateEmployee(2L,"Mounika","DB");
 // ------------------Update employee name by ID ---------(end)
 
 
 // ------------------Delete employee name by ID ---------(start)
-        employeeDAO.deleteEmployeeById(2L);
+//        employeeDAO.deleteEmployeeById(1L);
 // ------------------Delete employee name by ID ---------(end)
 
     }
